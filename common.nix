@@ -78,6 +78,9 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     historySubstringSearch.enable = true;
+    envExtra = ''
+      export ZSH_DISABLE_COMPFIX=true
+    '';
     history = {
       size = 1000000;
       save = 1000000;

@@ -15,9 +15,9 @@
   outputs = inputs@{ self, nix-darwin, nix-homebrew, home-manager, nixpkgs }:
     let
       # Primary account: runs ./rebuild.sh and owns /opt/homebrew
-      user = "harry-nix";
+      user = "harry";
       # Every account that gets the shared Nix stack
-      users = [ "harry-nix" "harry" ];
+      users = [ "harry" "harry-nix" ];
     in
     {
       darwinConfigurations."mac" = nix-darwin.lib.darwinSystem {
