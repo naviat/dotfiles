@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(terraform fmt:*)",
+      "Bash(terraform validate:*)",
+      "Bash(terraform init -backend=false:*)",
+      "Bash(make fmt:*)",
+      "Bash(make validate:*)",
+      "Bash(make lint:*)",
+      "Bash(make scan:*)",
+      "Bash(make test:*)",
+      "Bash(checkov:*)",
+      "Bash(trivy config:*)",
+      "Bash(tflint:*)"
+    ],
+    "ask": [
+      "Bash(terraform test:*)",
+      "Bash(terraform plan:*)",
+      "Bash(terragrunt plan:*)",
+      "Bash(aws sts get-caller-identity:*)"
+    ],
+    "deny": [
+      "Bash(terraform apply:*)",
+      "Bash(terraform destroy:*)",
+      "Bash(terraform import:*)",
+      "Bash(terraform state:*)",
+      "Bash(terragrunt apply:*)",
+      "Bash(terragrunt destroy:*)",
+      "Bash(terragrunt run-all:*)",
+      "Bash(aws:*)",
+      "Bash(env:*)",
+      "Bash(printenv:*)",
+      "Read(./.env*)",
+      "Read(**/*.tfstate)",
+      "Read(**/*.tfstate.*)",
+      "Read(**/*.tfvars)",
+      "Read(~/.aws/**)",
+      "Read(~/.ssh/**)",
+      "Read(**/*.tfplan)",
+      "Read(**/tfplan)"
+    ]
+  }
+}

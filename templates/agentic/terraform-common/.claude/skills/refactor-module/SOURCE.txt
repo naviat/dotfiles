@@ -1,0 +1,2 @@
+Source: https://github.com/hashicorp/agent-skills/tree/f706481af9b8fedb66de909f6243ad29601afa0c/plugins/terraform/skills/refactor-module
+License: MPL-2.0 (HashiCorp). Copied unmodified. Re-check upstream before updating.

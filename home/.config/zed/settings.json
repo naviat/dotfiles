@@ -1,0 +1,33 @@
+{
+  "edit_predictions": {
+    "provider": "none"
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "favorite_config_option_values": {
+        "model": [
+          "sonnet",
+          "opus",
+          "haiku"
+        ]
+      },
+      "default_config_options": {
+        "model": "sonnet",
+        "mode": "auto"
+      },
+      "type": "registry"
+    }
+  },
+  "buffer_font_size": 13.0,
+  "ui_font_size": 13.0,
+  "cli_default_open_behavior": "new_window",
+  "vim_mode": false,
+  "telemetry": { "diagnostics": false, "metrics": false },
+  "buffer_font_family": "Hack Nerd Font",
+  "terminal": { "font_family": "Hack Nerd Font" },
+  "format_on_save": "on",
+  "auto_install_extensions": { "terraform": true },
+  "languages": {
+    "Terraform": { "tab_size": 2 }
+  }
+}
